@@ -11,5 +11,5 @@ class Agent(object):
         self.agent = SAC(state_dim=self.observation_dim, action_dim=self.action_dim,device = torch.device('cpu'))
         self.agent.load('best_model')
     def act(self, observation):
-        print(observation.shape)
+        #print(observation.shape)
         return self.agent.select_action(observation, deterministic=True)

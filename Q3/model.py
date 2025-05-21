@@ -79,7 +79,7 @@ class SAC:
     def __init__(self, 
                  state_dim, 
                  action_dim, 
-                 hidden_dim=256, 
+                 hidden_dim=512, 
                  actor_lr=3e-4, 
                  critic_lr=3e-4, 
                  alpha=0.2,
